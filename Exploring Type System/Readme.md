@@ -1,9 +1,6 @@
 # Daftar yang harus diperlajari pada Type System
-- [x] Any, Let, Unions and Enum
-- [x] More Primitive Types
-- [] Object Spread
-- [] Tuples
-- [] Functions
-
-### Summary
-...
+- [X] Any, Let, Unions and Enum
+- [X] More Primitive Types
+- [X] Object Spread
+- [X] Tuples
+- [X] Functions
