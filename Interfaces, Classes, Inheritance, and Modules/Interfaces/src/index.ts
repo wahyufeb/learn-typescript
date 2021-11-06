@@ -21,7 +21,7 @@ const student1: IStudent = {
   grade: 12,
 };
 console.log(student1);
-// Hasil :
+// Result :
 // { nis: 23220023123, name: 'June Wanwimol', grade: 12 }
 
 // const student2: IStudent = {
@@ -29,7 +29,7 @@ console.log(student1);
 //   name: "Puimek Napasorn",
 // };
 // console.log(student2);
-// Hasil : (Error) Karena student2 tidak mengimplementasikan properti grade
+// Result : (Error) Karena student2 tidak mengimplementasikan properti grade
 
 //  (2) Optional properties
 interface IEmployee {
@@ -44,7 +44,7 @@ const employee1: IEmployee = {
   remoteWorker: true,
 };
 console.log(employee1);
-// Hasil :
+// Result :
 // { name: 'Nong Patchamon', division: 'Product', remoteWorker: true }
 
 const employee2: IEmployee = {
@@ -52,7 +52,7 @@ const employee2: IEmployee = {
   division: "Marketing",
 };
 console.log(employee2);
-// Hasil : (Tidak Erorr) karena properti remoteWorker adalah properti optional
+// Result : (Tidak Erorr) karena properti remoteWorker adalah properti optional
 // { name: 'Mint Nicha Phongkorapat', division: 'Marketing' }
 //
 
@@ -79,7 +79,7 @@ function printNameOrValue(obj: IIdName | IDescrValue): void {
 
 printNameOrValue({ id: 1, name: "Nong" });
 printNameOrValue({ descr: "Description", value: 23 });
-// Hasil :
+// Result :
 // obj.name : Nong
 // obj.value : 23
 
@@ -94,6 +94,6 @@ const person1: PersonPropertyName = "id";
 const person2: PersonPropertyName = "name";
 console.log(person1);
 console.log(person2);
-// Hasil :
+// Result :
 // id
 // name

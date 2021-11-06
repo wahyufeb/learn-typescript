@@ -3,3 +3,7 @@ merupakan sebuah cara yang digunakan untuk menyalin properti dari suatu *object*
 
 Untuk melakukan penyalinan pada variabel baru, dilakukan dengan menggunakan 
 **...** (titik tiga) 
+
+### Contents
+1. Spread Presedence
+2. Spread with Arrays

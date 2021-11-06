@@ -14,17 +14,17 @@
 function concatVal(a: string, b?: string) {
   console.log(`a + b = ${a + b}`);
 }
-concatVal("June", "Wanwimol"); // Hasil :  a + b = JuneWanwimol
-concatVal("Puimek"); // Hasil : a + b = Puimekundefined
+concatVal("June", "Wanwimol"); // Result :  a + b = JuneWanwimol
+concatVal("Puimek"); // Result : a + b = Puimekundefined
 
 // (2) Default parameters
 function concatWithDefault(a: string, b: string = "Jane") {
   console.log(`a + b = ${a + b}`);
 }
 
-concatWithDefault("Marry"); // Hasil : a + b = MarryJane
-concatWithDefault("Marina", "Jenita"); // Hasil : a + b = MarinaJenita
-concatWithDefault("Jessica"); // Hasil : a + b = JessicaJane
+concatWithDefault("Marry"); // Result : a + b = MarryJane
+concatWithDefault("Marina", "Jenita"); // Result : a + b = MarinaJenita
+concatWithDefault("Jessica"); // Result : a + b = JessicaJane
 
 // (3) Rest parameters
 function sayName(...names: string[]) {
@@ -33,7 +33,7 @@ function sayName(...names: string[]) {
   }
 }
 sayName("Wahyu", "Jane", "Jessica", "June", "Puimek");
-// Hasil :
+// Result :
 // Wahyu
 // Jane
 // Jessica
@@ -51,7 +51,7 @@ function sayCallback(msg: string, callbackFn: any) {
 }
 
 sayCallback("Hello mate", myCallback);
-// Hasil :
+// Result :
 // sayCallback called, message "Hello mate"
 // myCallback called with "Hello mate" from sayCallback
 
@@ -66,7 +66,7 @@ function sayCallback2(msg: string, callbackFn: (text: string) => void) {
 }
 
 sayCallback2("Hello Dude!", myCallback2);
-// Hasil :
+// Result :
 // sayCallback called, message "Hello Dude!"
 // myCallback called with "Hello Dude!" from sayCallback
 
@@ -77,9 +77,9 @@ type AllowedNumbers = 5 | 10 | 15 | 20 | 25 | 30;
 function sayWithLiteral(text: AllowedStrings | AllowedNumbers): void {
   console.log(`Called with : ${text}`);
 }
-sayWithLiteral("One"); // Hasil : Called with : One
-sayWithLiteral("Two"); // Hasil : Called with : Two
-// sayWithLiteral("Four"); // Hasil : Error karena "Four" tidak ada pada type AllowedStrings
-sayWithLiteral(10); // Hasil : Called with : 10
-sayWithLiteral(25); // Hasil : Called with : 25
-// sayWithLiteral(100); // Hasil : Error karena "100" tidak ada pada type AllowedNumbers
+sayWithLiteral("One"); // Result : Called with : One
+sayWithLiteral("Two"); // Result : Called with : Two
+// sayWithLiteral("Four"); // Result : Error karena "Four" tidak ada pada type AllowedStrings
+sayWithLiteral(10); // Result : Called with : 10
+sayWithLiteral(25); // Result : Called with : 25
+// sayWithLiteral(100); // Result : Error karena "100" tidak ada pada type AllowedNumbers

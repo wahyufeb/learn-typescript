@@ -1,4 +1,6 @@
-# Daftar yang harus diperlajari pada Type System
+# Exploring Type System
+
+### Contents
 - [X] Any, Let, Unions and Enum
 - [X] More Primitive Types
 - [X] Object Spread

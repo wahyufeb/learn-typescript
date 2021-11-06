@@ -1,5 +1,7 @@
-# Daftar yang harus diperlajari pada Type System
+# Interfaces, Classes, Inheritance, and Modules
+
+### Contents
 - [X] Interfaces
-- [] Classes
-- [] Inheritance
-- [] Modules
+- [X] Classes
+- [ ] Inheritance
+- [ ] Modules

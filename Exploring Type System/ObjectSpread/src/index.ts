@@ -13,7 +13,7 @@ const name1: object = {
 
 const secondName: object = { ...name1 };
 // console.log(secondName);
-// Hasil :  { firstName: 'June Wanwimol', lastName: 'Jaenasavamethee' }
+// Result :  { firstName: 'June Wanwimol', lastName: 'Jaenasavamethee' }
 
 // (1) Spread Presedence
 // Bagaimana jika ada properti yang sama? (properti id sama)
@@ -32,7 +32,7 @@ const university: object = {
 
 const data = { ...student, ...university };
 // console.log(data);
-// Hasil :
+// Result :
 // {
 //   id: 10,
 //   name: 'Winamore University',
@@ -46,7 +46,7 @@ const secondArr: number[] = [15, 20, 25];
 
 const unionArr = [...firstArr, ...secondArr];
 // console.log(unionArr);
-// Hasil : [ 1, 5, 10, 15, 20, 25 ]
+// Result : [ 1, 5, 10, 15, 20, 25 ]
 
 // Menyalin sebuah array of object dan mengatur posisinya
 // Salin array of object dan tempatkan di urutan ke-2
@@ -57,7 +57,7 @@ const obj3: object[] = [{ id: 3, name: "Kwanrudee" }];
 const uniArr: object[] = [...obj1, { id: 2, name: "Ploy" }, ...obj3];
 console.log(uniArr);
 
-// Hasil :
+// Result :
 // [
 //   { id: 1, name: 'Rinrada' },
 //   { id: 2, name: 'Ploy' },
