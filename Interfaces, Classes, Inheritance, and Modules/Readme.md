@@ -3,5 +3,5 @@
 ### Contents
 - [X] Interfaces
 - [X] Classes
-- [ ] Inheritance
+- [X] Inheritance
 - [ ] Modules
