@@ -1,7 +1,8 @@
 # Interfaces, Classes, Inheritance, and Modules
 
 ### Contents
-- [X] Interfaces
-- [X] Classes
-- [X] Inheritance
-- [ ] Modules
+
+- [x] Interfaces
+- [x] Classes
+- [x] Inheritance
+- [x] Modules
