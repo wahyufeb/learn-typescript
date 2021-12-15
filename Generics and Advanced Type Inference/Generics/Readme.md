@@ -7,7 +7,6 @@ Sebuah cara untuk menuliskan kode yang memungkinkan kita membuat suatu fungsi at
 1. Generic syntax
 2. Multiple generic types
 3. Constraining the type of T
-4. Using the type T
-5. Generic constraints
-6. Generic interfaces
-7. Creating new objects within generics
+4. Generic constraints
+5. Generic interfaces
+6. Creating new objects within generics

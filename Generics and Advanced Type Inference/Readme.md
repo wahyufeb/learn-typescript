@@ -2,5 +2,5 @@
 
 ### Contents
 
-- [ ] Generics
+- [x] Generics
 - [ ] Advanced Type Inference

@@ -4,10 +4,9 @@
  * 1. Generic syntax
  * 2. Multiple generic types
  * 3. Constraining the type of T
- * 4. Using the type T
- * 5. Generic constraints
- * 6. Generic interfaces
- * 7. Creating new objects within generics
+ * 4. Generic constraints
+ * 5. Generic interfaces
+ * 6. Creating new objects within generics
  * ----------------------------
  */
 
@@ -78,7 +77,53 @@ console.log(
   joiner1.joinArr(["B", "A", "N", "G", "K", "O", "K"])
 );
 
-// (4) Using the type T
-// (5) Generic constraints
-// (6) Generic interfaces
-// (7) Creating new objects within generics
+// (4) Generic constraints
+function printProperty<T, K extends keyof T>(object: T, key: K) {
+  console.log(`${key} : ${object[key]}`);
+}
+printProperty({ name: "Wahyu", age: 23 }, "name");
+printProperty({ name: "Wahyu", age: 23 }, "age");
+// Result :
+// name : Wahyu
+// age : 23
+
+// (5) Generic interfaces
+interface IPrint {
+  print(): void;
+}
+
+interface ILogInterface<T extends IPrint> {
+  logToConsole(iPrintObj: T): void;
+}
+
+class LogClass<T extends IPrint> implements ILogInterface<T> {
+  public logToConsole(iPrintObj: T): void {
+    iPrintObj.print();
+  }
+}
+
+let printObject: IPrint = {
+  print() {
+    console.log(`printObject.print() called`);
+  },
+};
+
+let logClass = new LogClass();
+logClass.logToConsole(printObject);
+// Result : printObject.print() called
+
+// (6) Creating new objects within generics
+class ClassA {}
+class ClassB {}
+
+function createInstance<T>(arg: { new (): T }): T {
+  return new arg();
+}
+
+let classA = createInstance(ClassA);
+let classB = createInstance(ClassB);
+console.log(classA, classA instanceof ClassA);
+console.log(classB, classB instanceof ClassB);
+// Result :
+// ClassA {} true
+// ClassB {} true
