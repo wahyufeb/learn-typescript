@@ -3,4 +3,4 @@
 ### Contents
 
 - [x] Generics
-- [ ] Advanced Type Inference
+- [x] Advanced Type Inference

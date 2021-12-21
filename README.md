@@ -9,7 +9,7 @@
   - [x] Tuples
   - [x] Functions
 - [x] Interfaces, Classes, Inheritance, and Modules
-- [ ] Generics and Advanced Type Inference
+- [x] Generics and Advanced Type Inference
 - [ ] Asynchronous Language Features
 - [ ] Decorators
 - [ ] Using Observables to Transform Data
