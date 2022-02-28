@@ -10,7 +10,6 @@
   - [x] Functions
 - [x] Interfaces, Classes, Inheritance, and Modules
 - [x] Generics and Advanced Type Inference
-- [ ] Asynchronous Language Features
 - [ ] Decorators
 - [ ] Using Observables to Transform Data
 - [ ] Test-Driven Development
